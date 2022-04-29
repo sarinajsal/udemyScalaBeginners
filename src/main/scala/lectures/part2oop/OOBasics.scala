@@ -1,5 +1,8 @@
 package lectures.part2oop
 
+import java.io.Writer
+import java.time.LocalDate
+
 object OOBasics extends App {
 
   val person = new Person("john", 26)
@@ -32,22 +35,7 @@ class Person (name: String, val age:Int) { //the constructor, age is a class par
 
 
 
-  class Writer (firstName: String, surname: String, val yob:  Int){
-    def fullName (): String = {
-       this.firstName + " " + this.surname
-    }
-  }
-
-  val murakami = new Writer("Haruki", "Murakami", 1966)
-
-  println(murakami.fullName())
-  println(murakami.yob) //cant access firstname and surname individually due to no val
-
-  class Novel (name: String, yearOfRelease: Int, author: Int){ // author is an instance of writer
-//     def authorAge (yob: Int): Int = {
-//
-//     }
-  }
+ 
 }
 
 
